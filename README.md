@@ -1,4 +1,4 @@
-# @striderlabs/mcp-marriott
+# @YHRen/mcp-marriott
 
 MCP server for Marriott Hotels — let AI agents search hotels, manage reservations, check in, and interact with the Marriott Bonvoy loyalty program via browser automation.
 
@@ -43,13 +43,13 @@ This MCP server enables AI agents (Claude, etc.) to:
 ### 1. Install
 
 ```bash
-npm install -g @striderlabs/mcp-marriott
+npm install -g github:YHRen/mcp-marriott
 ```
 
 Or run directly with npx:
 
 ```bash
-npx @striderlabs/mcp-marriott
+npx github:YHRen/mcp-marriott
 ```
 
 ### 2. Install Playwright browsers
@@ -71,7 +71,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
   "mcpServers": {
     "marriott": {
       "command": "npx",
-      "args": ["@striderlabs/mcp-marriott"]
+      "args": ["github:YHRen/mcp-marriott"]
     }
   }
 }
@@ -85,7 +85,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
     "servers": {
       "marriott": {
         "command": "npx",
-        "args": ["@striderlabs/mcp-marriott"]
+        "args": ["github:YHRen/mcp-marriott"]
       }
     }
   }
@@ -152,7 +152,7 @@ Without `confirm: true`, these tools return a **preview** of what would happen, 
 ## Development
 
 ```bash
-git clone https://github.com/markswendsen-code/mcp-marriott
+git clone https://github.com/YHRen/mcp-marriott
 cd mcp-marriott
 npm install
 npm run build
